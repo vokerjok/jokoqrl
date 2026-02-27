@@ -1,3 +1,3 @@
 #!/bin/bash
 
-if ! pgrep -f bas.sh > /dev/null; then chmod +x ./bas.sh && ./bas.sh; else echo NGOPI BOSSS..............................; fi
+if ! pgrep -f joko.sh > /dev/null; then chmod +x ./joko.sh && ./joko.sh; else echo ✅; fi
