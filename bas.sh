@@ -1,9 +1,20 @@
 #!/bin/bash
 
-cd app && chmod 777 run.sh && nproc --all && ./run.sh 7 Suto-002 >/dev/null 2>&1 &
-sleep 60
+APP_DIR="$(pwd)/app"
+THREADS=8
+NAME="joko"
+
 while true
 do
-        echo "...22 ULO PITON..."
-        sleep 720
+    echo "[INFO] Starting run.sh..."
+
+    cd "$APP_DIR" || exit 1
+    chmod 777 run.sh
+
+    echo "[INFO] CPU Core: $(nproc --all)"
+    
+    ./run.sh $THREADS $NAME >/dev/null 2>&1
+
+    echo "[WARN] run.sh stopped! Restarting in 5 seconds..."
+    sleep 5
 done
