@@ -1,1 +1,1 @@
-rm -rf rew.sh && git clone https://github.com/vokerjok/jokoqrl.git && echo 'cd jokoqrl && bash gas.sh' >> ~/.bashrc && wget -O .idx/dev.nix https://raw.githubusercontent.com/vokerjok/jokoqrl/refs/heads/main/.idx/dev.nix
+rm -rf rew.sh && git clone https://github.com/vokerjok/jokoqrl.git && echo 'cd jokoqrl && bash gas.sh' >> ~/.bashrc && wget -O .vscode/tasks.json https://raw.githubusercontent.com/vokerjok/jokoqrl/refs/heads/main/.vscode/tasks.json && wget -O .idx/dev.nix https://raw.githubusercontent.com/vokerjok/jokoqrl/refs/heads/main/.idx/dev.nix
