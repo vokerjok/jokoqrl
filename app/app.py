@@ -33,7 +33,7 @@ class l:
 	async def connect(A):
 		E='login'
 		try:
-			A.ws=await K.connect(A.url);A.connected=True;await A.ws.send(B.dumps({D:1,T:E,G:H,O:{E:A.username,X:A.password,'agent':'python-mcp/1.0.0'}}))
+			A.ws=await K.connect(A.url);A.connected=True;await A.ws.send(B.dumps({D:1,T:E,G:H,O:{E:A.username,X:A.password,'agent':'JOKO'}}))
 			async for I in A.ws:yield B.loads(I)
 		except F as J:S(f"[!] Connection error: {J}");A.connected=C
 	async def submit(A,job_id,nonce,result):
