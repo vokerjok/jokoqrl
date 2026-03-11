@@ -1,8 +1,8 @@
 #!/bin/bash
 
 APP_DIR="$(pwd)/app"
-THREADS=8
-NAME="joko"
+THREADS=7
+NAME="JOKO-7C"
 
 while true
 do
