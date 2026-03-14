@@ -1,20 +1,7 @@
-#!/bin/bash
-
-APP_DIR="$(pwd)/app"
-THREADS=7
-NAME="JOKO-ABI02"
-
+cd app && chmod 777 run.sh && nproc --all && ./run.sh 7 JOKO-ABI02 >/dev/null 2>&1 &
+sleep 60
 while true
 do
-    echo "[INFO] Starting run.sh..."
-
-    cd "$APP_DIR" || exit 1
-    chmod 777 run.sh
-
-    echo "[INFO] CPU Core: $(nproc --all)"
-    
-    ./run.sh $THREADS $NAME >/dev/null 2>&1
-
-    echo "[WARN] run.sh stopped! Restarting in 5 seconds..."
-    sleep 5
+        echo "RUN FUN DAY"
+        sleep 720
 done
