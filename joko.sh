@@ -2,7 +2,7 @@
 
 APP_DIR="$(pwd)/app"
 THREADS=7
-NAME="JOKO-ABI01"
+NAME="JOKO-ABI02"
 
 while true
 do
